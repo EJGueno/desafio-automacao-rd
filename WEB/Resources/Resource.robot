@@ -10,11 +10,11 @@ ${MSG_DELETE}     The selected record will be permanently deleted. Are you sure 
 
 *** Keywords ***
 Abrir Navegador
-    [Documentation]         Realiza a abertura do navegador
-    New Browser             browser=${BROWSER}
-    Set Browser Timeout     5s
-    New Context             viewport={'width': 1920, 'height': 1080}
-    New Page                ${URL}
+    [Documentation]             Realiza a abertura do navegador
+    New Browser                 browser=${BROWSER}
+    Set Browser Timeout         5s
+    New Context                 viewport={'width': 1920, 'height': 1080}
+    New Page                    ${URL}
 
 Dado que a página de login está carregada
     [Documentation]             Verifica se a página de login está carregada
@@ -23,14 +23,14 @@ Dado que a página de login está carregada
     Wait for Elements State     //button[@type='submit']
 
 Quando eu insiro credenciais
-    [Documentation]     Insere as credenciais de login
-    [Arguments]         ${USERNAME}    ${PASSWORD}
-    Type Text           //div//input[@name='username']    ${USERNAME}
-    Type Text           //div//input[@name='password']    ${PASSWORD}
+    [Documentation]             Insere as credenciais de login
+    [Arguments]                 ${USERNAME}    ${PASSWORD}
+    Type Text                   //div//input[@name='username']    ${USERNAME}
+    Type Text                   //div//input[@name='password']    ${PASSWORD}
 
 E clico no botão de login
-    [Documentation]     Clica no botão de login
-    Click               //button[@type='submit']
+    [Documentation]             Clica no botão de login
+    Click                       //button[@type='submit']
 
 Então devo ver a página inicial do sistema
     [Documentation]             Verifica se a página inicial do sistema foi carregada
