@@ -20,7 +20,7 @@ CT02 - Realiza Cadastro de Novo Usuário
     Dado que a página Admin está carregada
     Quando eu clico no botão de Adcionar Usuário
     E Seleciono     User Role           Admin
-    E Seleciono Employee Name           manda akhil user
+    E Seleciono Employee Name           mandar akhil user
     E Seleciono     Status              Enabled
     E Preencho      Username            UserEdgar
     E Preencho      Password            teste123

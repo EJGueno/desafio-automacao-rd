@@ -4,7 +4,7 @@ Library         AppiumLibrary
 
 *** Variables ***
 ${URL}                  http://127.0.0.1:4723/wd/hub
-${APK}                  C:\\Users\\edgar\\www\\desafio-rd-main\\MOBILE\\apk\\app-debug.apk
+${APK}                  C:\\Users\\edgar\\www\\desafio-automacao-rd\\MOBILE\\apk\\app-debug.apk
 
 
 *** Keywords ***
